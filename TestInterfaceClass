@@ -1,0 +1,30 @@
+interface AnimalList {
+	//Does not have a body
+	public void animalSound();
+	public void sleep();
+}
+
+class Onk implements AnimalList
+{
+	public void animalSound()
+	{
+		System.out.println("The pig says wee weeee");
+	}
+	
+	public void sleep()
+	{
+		System.out.println("Zzzzzzz");
+	}
+	
+}
+
+
+class TestInterfaceClass{
+	public static void main(String args[])
+	{
+		Onk aml=new Onk();
+		aml.animalSound();
+		aml.sleep();
+	}
+	
+}
