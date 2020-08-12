@@ -1,0 +1,35 @@
+// Abstraction class goes here
+abstract class Shape{
+	abstract void draw();
+}
+/// End of abstraction class
+
+
+// Extends and calling Abstraction class
+class Rectangle extends Shape
+{
+	void draw()
+	{
+		System.out.println("drawing rectangle");
+	}
+}
+
+class Circle1 extends Shape
+{
+	void draw()
+	{
+		System.out.println("drawing circle");
+	}
+} 
+
+class TestAbstraction1 {
+	public static void main(String args[]) {
+		Shape s=new Rectangle(); // GET THE RESULT - drawing rectangle
+		//OR - AND ?? //
+		Shape a=new Circle1(); // GET THE RESULT - drawing circle
+		s.draw();
+		a.draw();
+		
+	}
+
+}
