@@ -26,6 +26,7 @@ Class Vehicle {
   System.out.println("Tuut, tuut!")}
   
   }
+  
 }
 
 
@@ -42,7 +43,9 @@ Class Car extends Vehicle {
     myCar.honk ();
 
     System.out.println(myCar.brand + " " + myCar.ModelName);
+    
   }
+  
 }
   
 
